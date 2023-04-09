@@ -62,7 +62,7 @@ def quantidadePilha(p):
 
 def retiraPrimeiro(p):
     """
-    Função para retirar o primeiro valor inserido em uma lista \n
+    Função para retirar o primeiro valor inserido em uma pilha \n
     Passa todos os elementos para uma pilha auxiliar, depois dá um pop nessa pilha \n
     e retorna os elementos restantes para a pilha, sem o primeiro.
     """
