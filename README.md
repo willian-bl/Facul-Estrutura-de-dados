@@ -14,3 +14,7 @@ Repositório com meus notebooks utilizados nas aulas de Estrutura de Dados da fa
 - Pilhas
   - Funções primitivas de pilha
   - Exercícios com pilhas
+- Filas
+  - Funções primitivas de filas
+  - Exercícios com filas
+  
