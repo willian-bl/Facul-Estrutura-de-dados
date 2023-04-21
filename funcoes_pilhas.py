@@ -22,6 +22,8 @@ def mostraPilha(p):
     A função mostrapilha tem como objetivo mostrar o conteudo da \n
     pilha p (passada como parâmetro) utilizando as funções primitivas \n
     para manipulação de pilha.
+
+    A função foi alterada daquela que fizemos na aula para que o topo da pilha seja printado primeiro e, assim, fique sendo o elemento que sairá "em cima" no print
     """
 
     if vazia(p):
@@ -29,13 +31,14 @@ def mostraPilha(p):
         return
 
     aux = [] # Para a elaboração da função precisa-se de uma pilha auxiliar
+    print('Topo: ')
     while not vazia(p): # enquanto a pilha p não estiver vazia
         v = pop(p) # retirar o elemento do topo da pilha P
+        print(v)   # mostrar o elemento (o elemento do topo será printado primeiro e assim por diante)
         push(aux, v) # colocar o elemento na pilha auxiliar
     
-    while not vazia(aux):   # retornar os elementos da pilha auxiliar
-        v = pop(aux)        # para a pilha P
-        print(v)            # mostrar os elementos na ordem de inserção
+    while not vazia(aux):   # retornar os elementos da pilha auxiliar para a pilha p
+        v = pop(aux)
         push(p, v)
 
 
