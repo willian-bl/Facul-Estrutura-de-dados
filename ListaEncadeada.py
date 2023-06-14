@@ -198,6 +198,25 @@ class ListaLigada:
         else:  # Se chegar no else, significa que a informação de q é exatamente igual à x. Ou seja, o elemento já foi cadastrado.
             print(f'Elemento anteriormente cadastrado')  # Aqui, nossa tratativa é NÃO adicionar o elemento novamente. Ou seja, trabalhando sempre com o método "insereOrdenado" não teremos elementos repetidos na lista
 
+        """
+        Questão da prova: Alterar o método insere ordenado da lista encadeada simples para permitir que tenha duplicidade de chaves, mas no máximo 2 elementos iguais
+        """
+
+        # if not q or q.getInfo() > x:    # Se chegamos no último elemento (p é o último e não existe q) ou se o dado de q é maior que x
+        #     self.insereDepois(p, x)     # Inserimos o nó com o dado x depois de p
+        #                                 # Lembrando que, se entrar no if, q será maior que x e p será menor, pois teremos testado p no loop anterior (os valores de q que são menores que x são passados para p na iteração)
+        #     return
+        
+        # cont = 1    # Se chegou até aqui, tem pelo menos 1 elemento igual a x
+        # max = 3     # Número máximo de elementos repetidos que pode ter
+        # while q.proximo and q.proximo.info == x:    # Enquanto existir um próximo elemento e esse elemento for igual a x
+        #     q = q.proximo
+        #     cont += 1                               # Conta ele
+        # if cont < max:  # Se tivermos menos elementos na lista que o máximo, pode adicionar
+        #     self.insereDepois(p, x)
+        # else:  
+        #     print(f'Elemento {x} já cadastrado o número máximo de vezes ({max})')  
+
 
     def removeOrdenado(self, x):
         """
